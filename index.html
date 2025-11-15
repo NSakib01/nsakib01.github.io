@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MD. Nazmus Sakib — Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Intro Animation -->
+  <div id="intro">
+    <h1 class="intro-line" id="hi">Hi</h1>
+    <h2 class="intro-line" id="name">I'm <span>MD. Nazmus Sakib</span></h2>
+    <div class="intro-line" id="ican-container">
+      <p id="ican">I can <span class="scroll-skill" id="skill"></span></p>
+    </div>
+    
+    <!-- Windows-style Loading Animation -->
+    <div class="loading-container">
+      <div class="windows-loader">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <header>
+    <!-- Floating shapes for minimal motion aesthetic -->
+    <div class="ps-shape ps-circle"></div>
+    <div class="ps-shape ps-cross"></div>
+    <div class="ps-shape ps-square"></div>
+    <div class="ps-shape ps-triangle"></div>
+    <div class="ps-shape ps-circle" style="left: 70%; animation-delay: 1.5s;"></div>
+    <div class="ps-shape ps-square" style="left: 85%; animation-delay: 2.5s;"></div>
+
+    <nav>
+      <div class="nav-brand">
+        <img src="Photos/self_pic.jpeg" alt="MD. Nazmus Sakib" class="nav-profile-pic" />
+        <strong>MD. Nazmus Sakib</strong>
+      </div>
+      <div>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#video-cv">Video CV</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-text">
+        <h1>MD. Nazmus Sakib</h1>
+        <p class="subtitle">Computer Engineer • Developer</p>
+        <p class="tagline">
+          Hi, and welcome to my portfolio. I’m Nazmus Sakib, a Computer Engineering student at AIUB with an interest in system design and embedded systems. I like exploring how hardware and software fit together and enjoy taking on challenging projects that push me to grow.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn-primary">View Projects</a>
+          <a href="#contact" class="btn-outline">Contact Me</a>
+        </div>
+      </div>
+      <img src="Photos/self_pic.jpeg" alt="Profile Photo" />
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <h2 class="section-title">About</h2>
+      <div class="about-text">
+
+        <p>
+I'm Nazmus Sakib, a Computer Engineering student who enjoys working at the intersection of hardware and software. I focus on system design, embedded systems, and building practical solutions that solve real problems.
+        </p>
+
+        <p>
+          I like exploring how devices communicate, how systems interact, and how technology can be made more reliable and efficient. Whether it's writing code, working with microcontrollers, or experimenting with new tools, I enjoy improving my skills through hands-on work.
+        </p>
+
+        <p>
+          Outside of technical projects, I’m also interested in clean design and user experience — making things that feel simple, intuitive, and useful.
+        </p>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills">
+        <div class="skill-item" data-skill="cpp"><span>C++</span></div>
+        <div class="skill-item" data-skill="java"><span>Java</span></div>
+        <div class="skill-item" data-skill="cv"><span>Computer Vision</span></div>
+        <div class="skill-item" data-skill="embedded"><span>Embedded Systems</span></div>
+        <div class="skill-item" data-skill="linux"><span>Linux</span></div>
+        <div class="skill-item" data-skill="networking"><span>Networking</span></div>
+        <div class="skill-item" data-skill="git"><span>Git</span></div>
+        <div class="skill-item" data-skill="htmlcss"><span>HTML & CSS</span></div>
+        <div class="skill-item" data-skill="javascript"><span>JavaScript</span></div>
+      </div>
+      
+      <!-- Skill Descriptions Container -->
+      <div class="skill-description-container">
+        <div class="skill-description" data-skill="cpp">
+          I have a strong understanding and academic background in C++ and use the language to write efficient, reliable programs. My coursework and projects helped me build a deep understanding of memory management, algorithms, and object oriented design, which I apply confidently in problem solving and system level work.
+        </div>
+        <div class="skill-description" data-skill="java">
+          I have a solid command of Java and use it to develop structured, maintainable applications. My experience with object oriented principles allows me to design clean architectures that scale well and behave predictably.
+        </div>
+        <div class="skill-description" data-skill="cv">
+          I have a growing foundation in computer vision and enjoy working with image processing and feature extraction techniques. I use these tools to help computers analyze and understand visual data in meaningful ways.
+        </div>
+        <div class="skill-description" data-skill="embedded">
+          I have practical experience working with embedded systems where hardware and software meet. I enjoy building devices that sense, react, and operate independently, translating real world problems into efficient embedded solutions.
+        </div>
+        <div class="skill-description" data-skill="linux">
+          I am comfortable working in Linux environments and frequently use it for development, configuration, and system management. Command line workflows, package control, and process handling are all natural parts of my routine.
+        </div>
+        <div class="skill-description" data-skill="networking">
+          I understand core networking concepts such as routing, addressing, and protocols. I can work with configuration tasks and analyze how systems communicate across different layers of a network.
+        </div>
+        <div class="skill-description" data-skill="git">
+          I use Git confidently to track progress, manage branches, and keep projects organized. It helps me maintain clean workflows and collaborate effectively when needed.
+        </div>
+        <div class="skill-description" data-skill="htmlcss">
+          I create clean, responsive website layouts using HTML and CSS. I focus on structure, readability, and visual clarity while ensuring the design adapts well across devices.
+        </div>
+        <div class="skill-description" data-skill="javascript">
+          I use JavaScript to add interactivity and dynamic behavior to websites. It helps me bring static pages to life with practical features that enhance the user experience.
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2 class="section-title">Projects</h2>
+      <article>
+        <h3>Pothole Detection Device for Motor Vehicles Using Computer Vision</h3>
+        <p>
+          A real-time pothole detection system that uses image processing and CNN based classification 
+  to identify and highlight potholes in road images. It includes live camera feed analysis and 
+  an alert dashboard for efficient monitoring and timely alerts.
+        </p>
+      </article>
+      <article>
+        <h3>Student Management System (C++)</h3>
+        <p>Console-based CRUD system for managing student records using file handling and OOP.</p>
+      </article>
+      <article>
+        <h3>Snake Game (Java)</h3>
+        <p>Classic snake game with smooth keyboard controls and a scoring system.</p>
+      </article>
+      <article>
+        <h3>Portfolio Website</h3>
+        <p>This very website — clean, minimal, and responsive design built using HTML, CSS, and JavaScript.</p>
+      </article>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+      <h2 class="section-title">Experience</h2>
+      <div class="experience-item">
+        <h3>C++ Instructor — Binary IT Ltd</h3>
+        <p>
+          Taught beginner to intermediate C++ concepts including OOP, STL, and debugging techniques. 
+          Guided students through coding exercises and assessments.
+        </p>
+      </div>
+    </section>
+
+    <!-- Video CV Section -->
+    <section id="video-cv">
+      <h2 class="section-title">A little more about myself</h2>
+      <div class="video-container">
+        <iframe 
+          src="https://www.youtube.com/embed/ITUytjAuRus" 
+          title="Video CV - MD. Nazmus Sakib" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2 class="section-title">Contact</h2>
+      <p>nsakib.codes@gmail.com | +880 1732-550883</p>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/md-nazmus-sakib-ab7567312/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <a href="https://github.com/NSakib01" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a>
+        <a href="https://www.instagram.com/n.sakib_01/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i> Instagram</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>© 2025 MD. Nazmus Sakib — Built with care.</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
